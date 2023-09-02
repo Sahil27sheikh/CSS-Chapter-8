@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(white,rgba(164, 39, 139, 0.717), rgba(209, 209, 28, 0.55), red);
+}
+
+.main{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 60vh; 
+    perspective: 200vh;
+    perspective-origin: top right; 
+}
+
+.cube{
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    animation: Sahil 4s ease-in-out 0s infinite alternate;
+}
+
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.f{
+    background-color: chartreuse;
+    transform: translateZ(15vh);
+}
+.b{ 
+    transform-origin: center;
+    background-color: aqua;
+    transform: rotateX(180deg) translateZ(15vh);
+}
+.t{
+    background-color: yellow;
+    transform: rotateX(90deg) translateZ(15vh);
+}
+.bt{
+    background-color: rgb(255, 136, 0);
+    transform: rotateX(-90deg) translateZ(15vh);
+}
+.l{
+    transform-origin: center;  
+    background-color: blue;
+    transform: rotateY(-90deg) translateZ(15vh);
+}
+.r{ 
+    background-color: coral;
+    transform-origin:center;
+    transform: rotateY(90deg) translateZ(15vh);
+    
+}
+
+@keyframes Sahil {
+    form{
+        transform: rotateY() rotateZ() rotateX();
+    }
+     
+    to{ transform: rotateY(360deg) rotateZ(360deg) rotateX(360deg);
+    }
+    
+}

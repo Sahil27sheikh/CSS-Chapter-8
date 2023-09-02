@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background:radial-gradient(rgb(173, 214, 224), rgb(7, 214, 245)); 
+}
+.container{  
+    display: flex;
+    height: 400px;  
+    width: 400px; 
+    justify-content: center;
+    align-items: center;
+    perspective: 150vh;
+    perspective-origin: top right; 
+
+}
+.cube{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;  
+    animation: Sahil 3s ease-in-out 0s infinite alternate; 
+}
+@keyframes Sahil {
+    0%{ 
+        transform:  rotateX(0) rotateY(0) rotateZ(0);  
+    } 
+    100%{ 
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);  
+        
+
+    }
+    
+}
+.sides{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vh;
+    font-weight: bolder;
+    border: 3px solid white;
+}
+
+.front{
+    transform: translateZ(100px);
+    background-color: rgba(0, 0, 0, 0.463);
+    color: white;
+}
+.back{
+    transform: translateZ(-100px);
+    background-color: rgba(255, 0, 0, 0.523);
+    color: white;
+}
+.top{
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgba(250, 221, 5, 0.505);
+    color: white;
+}
+.bottom{
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: rgba(8, 250, 4, 0.5);
+    color: white;
+}
+.left{
+    transform: rotateX(90deg) translateZ(-100px);
+    background-color: rgba(4, 12, 252, 0.47);
+    color: white;
+}
+.right{
+    transform: rotateY(90deg) translateZ(-100px);
+    background-color:rgba(255, 140, 0, 0.484);
+    color: white;
+}

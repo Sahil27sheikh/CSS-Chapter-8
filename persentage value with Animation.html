@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations with % values</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .div { 
+            position: relative; 
+            background-color: red;
+            color: rgb(247, 244, 244);
+            font-size: 5vh;
+            height: 30vh;
+            width: 20vw; 
+            font-size: 2vh;
+            /* animation-name: Sahil; 
+            animation-duration: 3s; 
+            animation-timing-function: ease-in-out; 
+            animation-delay: 1s;  
+            animation-iteration-count: 5; 
+            animation-direction:alternate;  */
+            animation: Sahil 3s ease-in-out 0s infinite alternate;
+        }
+
+        @keyframes Sahil { 
+            0%{
+                height: 30vh;
+                width: 20vw;
+                font-size: 2vh;
+                transform: rotateZ(0) rotateX(0);
+            }
+            50%{
+                height: 45vh;
+                width: 30vw;
+                background-color: yellow;
+                font-size: 4vh;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                transform: rotateZ(360deg) rotateX(180deg) rotateY('0') scale3d(0,0,0);
+            }
+            100%{
+                height: 60vh;
+                width: 45vw;
+                background-color: blue;
+                color: white;
+                font-size: 6vh;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-weight: bolder;
+                font-style: normal;
+                transform: rotateY(90deg) scale3d(1,0.5,2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>

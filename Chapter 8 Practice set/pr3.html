@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: o;
+        }  
+        main{
+            height: 100vh;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        }
+        img{ 
+            transform-origin: center;
+            animation: rotate .5s infinite;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body> 
+    <header></header>
+    <main>
+        <img src="dragon-png-4.png" alt="">
+    </main>
+</body>
+
+</html>

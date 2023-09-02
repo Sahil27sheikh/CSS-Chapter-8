@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+                                  /* 3D transforms Propertys */
+        /* With the CSS transform property you can use the following 3D transformation methods: 
+                                          rotateX()
+                                          rotateY()
+                                          rotateZ() */ 
+     .container{ 
+        background-color: black;
+        border: 2px solid red;
+        height: 25vh;
+        width: 25vh;
+        font-size: 3vh;
+        text-align: center;  
+        margin-left: 50%;
+        margin-top: 20%;
+        perspective: 100vh; /*prespetive is use for show the element in 3D form. */
+     }
+     .red{
+        height: 25vh;
+        width: 25vh;
+        background-color: palevioletred;
+        /* transform: rotateZ(70deg); you can apply rotateX,Y,Z saperetly this type*/ 
+        transform: scale3D(1,1,8) rotate3D(2,7.5,-3,60deg) translate3D(90px,71px,111px); /* you can add x,y,z both value ot a time using rotate3D method. translate3D is use to shift the position of the element. you can use the translateX,Y,Z sepratly also. scale3D method is use to adjust the size of the element you are also able to add the scaleX,Y,Z values saperetly*/
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">This is Sahil
+        </div> 
+    </div>
+</body>
+</html>

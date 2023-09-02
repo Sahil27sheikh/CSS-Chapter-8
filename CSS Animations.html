@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div{
+            background-color: red;
+            color: rgb(247, 244, 244);
+            font-size: 5vh;
+            height: 30vh;
+            width: 20vw; 
+            /* animation-name: Sahil; (name of the animation)
+            animation-duration: 3s; (duration of the animation)
+            animation-timing-function: ease-in-out; (timing function of the animation)
+            animation-delay: 1s; (time delay of the animation)
+            animation-iteration-count: 5; (how meny time to word the animation)
+            animation-direction:alternate; (direction of the animation) */
+
+                     /* Shorthand property of the animation */
+            
+                     animation: Sahil 3s ease-in-out 0s infinite alternate; 
+                    }
+                    
+                    @keyframes Sahil {
+            form{
+                width: 20vw;
+                height: 30vh;
+                transform: rotateZ(0), rotateX(0);
+            }
+            to{
+                width: 50vw;
+                height: 50vh;
+                transform: rotateZ(360deg) rotateX(360deg);
+            }
+            
+        }
+        
+        img{
+            height: 25vh;
+        }
+        .a{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            /* animation: Sahil 3s ease-in-out 0s infinite alternate;   We can able to use the one animation one or more time. */
+            animation-name: Dragon;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+            animation-delay: 0;
+            animation-iteration-count: 5;
+            animation-direction: alternate;
+
+            
+        }
+        @keyframes Dragon {
+            form{
+                height: 25vh;
+                transform: rotateZ(0) rotateY(0) rotateX(0);
+                
+            }
+            to{
+                height: 25vh;
+                transform: rotateZ(360deg) rotateY(180deg) rotateX(180deg);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div">Lorem ipsum dolor sit amet.</div>
+    <div class="a"><img src="dragon-png-4.png" alt=""></div>
+</body>
+</html>

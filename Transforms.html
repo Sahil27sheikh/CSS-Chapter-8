@@ -1,0 +1,33 @@
+<!-- transforms is use to rorate, move scew or scale the elements in css. they are use to creat the 2D and 3D effects in css. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms in css</title>
+    <style>
+                         /* 2D transforms Property */
+        img{
+            height: 20vh;
+        }
+        .container{
+        /* transform: translate(120px, 52%); The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+        /* transform: rotate(0.7turn); The rotate() method rotates an element clockwise or counter-clockwise according to a given degree.*/ 
+        /* transform: scale(1, 0.5); we are able to use the slace in scaleX and scaleY seperetly. The scale() method increases or decreases the size of an element (according to the parameters given for the width and height).*/ 
+        /* transform: skew(30deg, 20deg); The skewY() method skews an element along the Y-axis by the given angle.*/
+        /* transform-origin: 0%;  transform origin is use to select the position to transform. */ 
+        transform: matrix(1, -0.3, 0, 1, 0, 0); /* The matrix() method combines all the 2D transform methods into one. The matrix() method take six parameters, containing mathematic functions, which allows you to rotate, scale, move (translate), and skew elements. The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+            <img src="https://webneel.com/daily/sites/default/files/images/daily/08-2018/1-nature-photography-spring-season-mumtazshamsee.jpg" alt="">
+        </div> 
+    </div>
+</body>
+</html>
