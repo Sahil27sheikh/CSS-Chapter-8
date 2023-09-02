@@ -40,8 +40,9 @@ progress bar and continuesly rotating image"</b> knowledge like this-
     &#10148; Perspective Origin
     &#10148; Animation With Hover<hr>
 <b>&#10148; Loader Project with animation in css.</b><hr>
-<b>&#10148; Rotatin cube project-1 with the use of transition and animations</b><hr>
-<b>&#10148; Rotatin cube project-2 with the use of transition, animations and the the transperent colors.</b><hr>
+<b>&#10148; Rotating cube project-1 with the use of transition and animations.</b><hr>
+<b>&#10148; Rotating cube project-2 with the use of transition, animations and the the transperent colors.</b><hr>
 <b>&#10148; Practice set 1: Creat a progress bar of rec color.</b><hr>
 <b>&#10148; Practice set 2: add the image in center of the page which is rotate continuesly.</b><hr>
+<b>Note:</b> I have use all the above mentioned properties in depth to this repository.
 </pre>
