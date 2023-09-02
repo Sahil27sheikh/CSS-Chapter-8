@@ -1,5 +1,8 @@
 <pre>In this repository i have added some of my CSS <b>"Transform Property",
-"Transition Property", "3D Transform Property", "CSS Animations Property", "Persentage Value With Amimations", "Loader Project", "Rotating Cube Project-1", "Rotating Cube Project-2 with Transperent Colors" and two practice sets with progress bar and continuesly rotating image"</b> knowledge like this-
+"Transition Property", "3D Transform Property", "CSS Animations Property",
+"Persentage Value With Amimations", "Loader Project", "Rotating Cube Project-1",
+"Rotating Cube Project-2 with Transperent Colors" and two practice sets with
+progress bar and continuesly rotating image"</b> knowledge like this-
 <h2>Transform Property</h2>
     &#10148; Transform Translate
     &#10148; Transform Rotate
